@@ -1,0 +1,40 @@
+geçerlilik ve kuralların kontrolü
+istenen şartların gerçekleşip gerçekleşmediği kontrol edilir. 
+
+business layer yeni kolsör concrete
+
+katmana sağ tık add refference ve entity ile data accessi ekle
+
+entity frame wrku ekle packet olarak
+
+concrete sağ tık add class 
+ör:Categorymanager
+
+public yap
+
+üzerinde çalışılaacak sınıf çağırılmalı
+
+GenericRepository<Category> repo=new GenericRepository<Category>();
+hataları ünlem ile ekle..
+
+her bir drud işlemi için metot oluşturulacak
+
+public class CategoryManager
+    {
+        GenericRepository<Category> repo = new GenericRepository<Category>();
+
+        public List<Category> GetAllBl()
+        {
+            return repo.List();
+        }
+        public void CategoryAddBl(Category p)
+        {
+            if(p.CategoryName=="" || p.CategoryName.Length<=3 || p.CategoryDescription=="" || p.CategoryName.Length=>51)
+            {
+                //hata mesajı
+            }
+            else{
+                repo.insert(p);
+            }
+        }
+    }

@@ -1,0 +1,20 @@
+ınterfaceler sınıflara rehberlik edecek olan yapılar
+ yazılım dünyasında dry ifadesini araştırın
+
+data access sağ tık yeni klasör absract
+
+sağ tık ekle yeni interface
+inetrface isimlendirirken ilk farf büyük I
+orn: ICategoryDal (Data Access layer üzerinde çalışılığı için Dal)
+
+gelen interface public hale getirilir
+
+interface içinde crud metodu yapılacak..  
+
+public interface ICategoryDal
+    {
+        List<Category> List();
+        void Insert(Category p);
+        void Update(Category p);
+        void Delete(Category p);
+    }

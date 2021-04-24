@@ -1,0 +1,17 @@
+public class GenericRepository<T> : IRepository<T> where T : class
+    {
+
+        Context c = new Context();
+        DbSet<T> _object;
+
+        public GenericRepository()
+        {
+            _object = c.Set<T>();
+        }
+.......
+
+
+class oluşturulduğunda katılsal özellikler implement edilmeli ünleme tıklayarak.
+metotların içleri doldurulmalı
+
+generic interface ve repo.. daha fazla kod yazmaktan kurtulmayı sağlayacaktır.

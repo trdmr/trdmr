@@ -1,0 +1,8 @@
+solution sağ tık add new project class(netframework)
+
+proje sağ tık somut claslar için add newfolder /concrete
+
+concrete sağ tık add new class (tablolar)
+class ismini public yapma
+
+propları ekleme (prop tab tab ile hızlı kullanım)

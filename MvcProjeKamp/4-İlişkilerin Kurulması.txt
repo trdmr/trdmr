@@ -1,0 +1,26 @@
+public ICollection<tabloadı> yenisim { get; set; }
+public ICollection<Heading> Headings { get; set; }
+
+public int CategoryId { get; set; }
+public virtual Category Category { get; set; }
+
+Attribute : girilecek olan verileri sınırlandırmak için kullanılacak şayet sınırlandırılmazsaa bellekte maksimum alan ayrılır.
+10 karakter gibi
+bir de anahtar ifadeler belirlenmeli
+
+key-string-length
+
+
+attribute ler köşeli parantez ile kullanılır.
+
+propların yer aldığı classda ilgili prop üzerine yazılır
+
+[Key] 
+public int CategoryId { get; set; }
+
+hata olacaktır. Önlemek için projemize entityframework dahil edelim. Projeye sağ tık manage packet.. entity ara yükle
+yükledikten sonra üstüne gelip model eklenecek.
+
+Bir örnek daha
+[StringLength(100)] 
+public int CategoryName { get; set; }

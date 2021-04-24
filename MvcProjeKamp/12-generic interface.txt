@@ -1,0 +1,10 @@
+public interface IAboutDal:IRepository<About>
+    {
+    }
+
+her bir entity için interface ekle public yap. irepositoryden katılım yap parametreyi ekle
+
+irepository e eklenen her metot kalıtsal yollarda her interfacede kullanılabilir olacaktır. 
+ ör: 
+List <T> List(Expression<Func<T, bool>>filter); filtreleme yaparak listele
+eklenirse hepsinde kullanılabilir olur. 
