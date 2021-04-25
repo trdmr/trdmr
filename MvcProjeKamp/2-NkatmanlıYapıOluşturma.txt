@@ -1,0 +1,7 @@
+1-Entity Layer  /veritabanı ile ilgili katman /tablolar ve alanlar
+2-Data Access Layer /verilere erişim ile ilgili katman CRUD (create read update delete)
+3-Business Layer /kuralların yer aldığı katman veriler istenen şartlarda girilsin 3 hane beş harf vs)
+4-Presentation-User interface katmanı / sunum
+
+
+----entitylerin oluşturulması /tabloların

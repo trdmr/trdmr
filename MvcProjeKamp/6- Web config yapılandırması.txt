@@ -1,0 +1,9 @@
+web config projenin sunum katmanında yer alır. canlıya taşırken yapılandırma ayarları burada yapılır. 
+404 sayfaları ile ilgili ayarlar
+
+bağlantı ayarı burada yapılır. (veritabanı) 
+
+system.web in altına
+<connectionStrings> 
+<add name="Context" connectionString="data source=sqlsunucusuismi;initial catalog=Veritabanıismi; integrated security=true;" provider name="System.Data.SqlClient"/>
+</connectionSrings>

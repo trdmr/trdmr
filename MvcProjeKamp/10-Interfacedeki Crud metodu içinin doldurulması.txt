@@ -1,0 +1,37 @@
+data access içinde cncrete sağ tık yeni klasör repositories isminde klasör
+
+bu klasör druc işlemlerine yönelik yapılacak ifadeleri tutacak
+
+repo..sağ tık ekle class CategoryRepository ekle public yap
+
+
+CategoryRepository :ICategoryDal hata verir sağ tık using yine hata implement interface
+
+
+public class CategoryRepositoriy : ICategoryDal
+    {
+        Context c = new Context();
+        DbSet<Category> _object;
+        public void Delete(Category p)
+        {
+            _object.Remove(p);
+            c.SaveChanges();
+        }
+
+        public void Insert(Category p)
+        {
+            _object.Add(p);
+            c.SaveChanges();
+
+        }
+
+        public List<Category> List()
+        {
+            _object.ToList();
+        }
+
+        public void Update(Category p)
+        {
+            c.SaveChanges();
+        }
+    }

@@ -1,0 +1,22 @@
+sql e tabloları aktarmak için kullanılır.
+data access layer katmanında sağ tık yeni klasör concrete klasörü
+klasöre sağ tık add class ismi Context
+
+boş classlar silinebilir. 
+
+data access layer katmanına sağ tık manage... 
+entity framework kur
+
+
+oluşturulan class türünü public yap sonra class isminin sonuna : DbContext yaz 
+DbContext hata gider..using syste seç...
+clasın sonuna : konulursa başka sınıftan kalıtım yapılacağı anlamına gelir 
+
+class içinde public DbSet<About> Abouts {get; set;}
+
+about altı çizili olacak. kaldırmak için data katmanında referenslara sağ tık referans ekle. entity katmanını referans olarak seç
+sonra hata yı düzeltmek için using syste....
+
+abouts yazan ise sql de kullanacağımız tablonun adı olacak.
+
+her bir entity katmanı için aynı işlem

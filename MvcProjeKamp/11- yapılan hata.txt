@@ -1,0 +1,14 @@
+yapılan işlem çalışır fakat daha az kod mimarisine uygun değildir. 100 tane tablo olsa her biri için aynı işlemi yapmak durumunda kalırız.
+bunun yerine: 
+
+abstract içinde yeni class oluştur adına IRepository ver
+
+public interface IRepository<T>
+    {
+        List<T> List();
+        void insert(T p);
+        void update(T p);
+        void delete(T p);
+     
+    }
+yaz

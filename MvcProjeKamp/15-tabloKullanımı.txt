@@ -1,0 +1,4 @@
+sunum  katmanında CategoryController oluştur 
+
+oluşan controller de indxe sağ tık view ekle ( layout olmasın şimdlik)
+

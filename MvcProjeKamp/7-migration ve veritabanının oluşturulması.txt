@@ -1,0 +1,28 @@
+migration:
+code first yklaşımıyla veritabanı ile ilgili oluşturulmuş olan mimariyi sql e aktaran yapı
+
+view penceresi
+other windows
+package manger
+
+migration aktif hale getirilmeli
+
+context sınıfının baplı olduğu katman seçilmeli 
+enable-migrations entera bas
+
+configürasyon  penceresi açılacak
+burada automaticmigratienabled= true yapılmalı
+
+update-database diyerek veritabanına yansıt
+
+veritabanını kontrol et (diyagram oluştur)
+
+eksik oluşan diyagram olursa migration güncelleme ile veritabanına yansıtma için:
+
+add-migration mig1
+
+update-database
+
+veritabanında kontrol et
+
+diyagramı kaydet
